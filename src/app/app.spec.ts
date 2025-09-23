@@ -13,6 +13,11 @@ describe('App', () => {
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
+  it(`should have the 'MesProduits_Fin_Atelier_01' title`, () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    expect(app.title).toEqual('MesProduits_Fin_Atelier_01');
+  });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(App);
